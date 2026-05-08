@@ -1,25 +1,51 @@
-.professional-summary p {
-  font-size: 1.125rem;
-  color: var(--text-main);
-  max-width: 800px;
-  margin-bottom: 1.5rem;
+/* ── About Page ── */
+.about-page {
+  animation: fadeIn 0.5s ease-out;
 }
 
-/* Technical Skills Grid */
+.about-page h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 0.5rem;
+}
+
+/* ── Professional Summary ── */
+.professional-summary p {
+  font-size: 1.1rem;
+  color: var(--text-main);
+  max-width: 800px;
+  line-height: 1.8;
+}
+
+/* ── Skills Grid ── */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-category {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.skill-category:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
 }
 
 .skill-category h3 {
-  font-size: 1.1rem;
-  color: var(--primary);
+  font-size: 0.8rem;
+  color: var(--accent);
   margin-bottom: 1rem;
   border: none;
   padding: 0;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
+  font-weight: 800;
 }
 
 .skill-category ul {
@@ -29,7 +55,8 @@
 }
 
 .skill-category li {
-  color: var(--text-muted);
+  color: var(--text-main);
+  font-size: 0.95rem;
   position: relative;
   padding-left: 1.25rem;
 }
@@ -39,11 +66,49 @@
   position: absolute;
   left: 0;
   color: var(--accent);
+  font-size: 0.8rem;
+}
+
+/* ── Education ── */
+.education-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 1.75rem 2rem;
+  max-width: 560px;
+  box-shadow: var(--shadow-sm);
 }
 
 .education-item h3 {
   font-size: 1.25rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
   border: none;
   padding: 0;
+}
+
+.education-item p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* ── Career Goal ── */
+.career-goal p {
+  font-size: 1.05rem;
+  color: var(--text-main);
+  max-width: 700px;
+  line-height: 1.75;
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 400px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
 }

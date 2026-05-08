@@ -1,9 +1,60 @@
-.projects-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 2rem;
+/* ── Projects Page ── */
+.projects-page {
+  animation: fadeIn 0.5s ease-out;
 }
 
-.projects-page h1 {
-  margin-bottom: 2rem;
+.projects-page-header {
+  margin-bottom: 3rem;
+}
+
+.projects-page-header h1 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: var(--primary);
+  margin-bottom: 0.6rem;
+}
+
+.projects-page-header p {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  max-width: 520px;
+}
+
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1.75rem;
+}
+
+/* Stagger fade-in animation for cards */
+.projects-list .project-card {
+  opacity: 0;
+  animation: cardFadeUp 0.5s ease-out forwards;
+}
+
+.projects-list .project-card:nth-child(1) { animation-delay: 0.05s; }
+.projects-list .project-card:nth-child(2) { animation-delay: 0.15s; }
+.projects-list .project-card:nth-child(3) { animation-delay: 0.25s; }
+.projects-list .project-card:nth-child(4) { animation-delay: 0.35s; }
+
+@keyframes cardFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .projects-list {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-page-header h1 {
+    font-size: 2rem;
+  }
 }

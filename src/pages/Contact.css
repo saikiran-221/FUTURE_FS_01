@@ -1,52 +1,61 @@
-/* Contact Page Refine */
+/* ── Contact Page ── */
+.contact-page {
+  animation: fadeIn 0.5s ease-out;
+}
+
 .contact-header {
   margin-bottom: 3rem;
   text-align: center;
 }
 
 .contact-header h1 {
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem);
   margin-bottom: 1rem;
 }
 
 .contact-intro {
-  font-size: 1.2rem;
+  font-size: 1.05rem;
   color: var(--text-muted);
-  max-width: 700px;
+  max-width: 600px;
   margin: 0 auto;
+  line-height: 1.7;
 }
 
+/* ── Cards Grid ── */
 .contact-info-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  margin-bottom: 4rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 .contact-card {
   background: var(--bg-card);
-  padding: 2rem;
-  border-radius: var(--radius);
+  padding: 2rem 1.5rem;
+  border-radius: 14px;
   border: 1px solid var(--border);
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: var(--shadow-sm);
 }
 
 .contact-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-md);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.1);
+  border-color: var(--accent);
 }
 
 .contact-icon {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  line-height: 1;
 }
 
 .contact-card h3 {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   margin-bottom: 0.5rem;
   border: none;
   padding: 0;
@@ -57,6 +66,7 @@
   font-size: 0.9rem;
   margin-bottom: 1.5rem;
   flex-grow: 1;
+  line-height: 1.5;
 }
 
 .contact-link-btn {
@@ -65,11 +75,13 @@
   padding: 0.6rem 1.2rem;
   border-radius: var(--radius);
   font-weight: 600;
-  font-size: 0.9rem;
-  transition: all 0.2s ease;
+  font-size: 0.875rem;
+  transition: background 0.2s ease, color 0.2s ease;
   width: 100%;
-  text-overflow: ellipsis;
+  text-align: center;
+  display: block;
   overflow: hidden;
+  text-overflow: ellipsis;
   white-space: nowrap;
 }
 
@@ -78,29 +90,38 @@
   color: white;
 }
 
+/* ── Collab Banner ── */
 .collab-section {
-  background-color: var(--primary);
+  background: linear-gradient(135deg, var(--primary) 0%, #1e3a5f 100%);
   color: white;
-  padding: 3rem;
-  border-radius: var(--radius);
+  padding: 3.5rem 2.5rem;
+  border-radius: 16px;
   text-align: center;
 }
 
 .collab-section h3 {
   color: white;
+  font-size: clamp(1.3rem, 3.5vw, 1.75rem);
   margin-bottom: 1rem;
-  border-left-color: white;
+  border: none;
+  padding: 0;
 }
 
 .collab-section p {
-  max-width: 800px;
+  max-width: 700px;
   margin: 0 auto;
-  font-size: 1.1rem;
-  line-height: 1.7;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #cbd5e1;
 }
 
-@media (max-width: 768px) {
+/* ── Responsive ── */
+@media (max-width: 640px) {
   .contact-info-grid {
     grid-template-columns: 1fr;
+  }
+
+  .collab-section {
+    padding: 2.5rem 1.5rem;
   }
 }
