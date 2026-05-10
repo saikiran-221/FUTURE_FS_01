@@ -1,19 +1,32 @@
 import React from 'react';
 import ProjectCard from '../components/ProjectCard';
+import profileImg from '../assets/IMG.jpg';
 import './Home.css';
 
 const Home = () => {
   return (
     <div className="page-container home-page">
       <section className="hero">
-        <h1>M Sai Kiran</h1>
-        <h2>Frontend Developer | Aspiring Full Stack Developer</h2>
-        <p className="value-statement">
-          Building responsive and interactive web applications with a focus on seamless user experience.
-        </p>
-        <div className="hero-btns">
-          <a href="/SaiKiranResume.pdf" className="btn-primary" target="_blank" rel="noopener noreferrer">Resume</a>
-          <a href="https://github.com/saikiran-221" className="btn-secondary" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <div className="hero-content">
+          <div className="hero-text">
+            <h1>M Sai Kiran</h1>
+            <h2>Frontend Developer | Aspiring Full Stack Developer</h2>
+            <p className="value-statement">
+              Building responsive and interactive web applications with a focus on seamless user experience.
+            </p>
+            <div className="hero-btns">
+              <a href="/SaiKiranResume.pdf" className="btn-primary" target="_blank" rel="noopener noreferrer">Resume</a>
+              <a href="https://github.com/saikiran-221" className="btn-secondary" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+          <div className="hero-image-wrapper">
+            <div className="hero-image-glow"></div>
+            <img
+              src={profileImg}
+              alt="M Sai Kiran – Frontend Developer"
+              className="hero-profile-img"
+            />
+          </div>
         </div>
       </section>
 
