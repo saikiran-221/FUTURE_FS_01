@@ -35,7 +35,7 @@ const ProjectDetails = () => {
         Concepts: ['JWT Authentication', 'Role-based Logic'],
         Tools: ['Git', 'GitHub', 'Vercel']
       },
-      github: 'https://github.com/saikiran-221',
+      github: 'https://github.com/Sohel123-code/blood-bank',
       demo: 'https://blood-bank1-sandy.vercel.app/'
     },
     'smart-crop': {
@@ -66,7 +66,7 @@ const ProjectDetails = () => {
         Logic: ['Conditional filtering algorithms', 'Structured state management'],
         Tools: ['Git', 'GitHub']
       },
-      github: 'https://github.com/saikiran-221',
+      github: 'https://github.com/saikiran-221/',
       demo: 'https://team-explorers-upd.vercel.app/'
     },
     'snippet-vault': {
@@ -106,9 +106,85 @@ const ProjectDetails = () => {
         Auth: ['JWT Authentication'],
         Tools: ['Git', 'GitHub', 'Vercel']
       },
-      github: 'https://github.com/saikiran-221',
+      github: 'https://github.com/saikiran-221/snippet',
       demo: 'https://snippet-ashy.vercel.app/'
-    }
+    },
+    'smart-doubt-exchange': {
+        title: 'Smart Doubt Exchange Platform',
+        subtitle: 'Collaborative AI-Powered Learning & Doubt Resolution Platform',
+        description: 'Smart Doubt Exchange Platform is a modern full-stack web application designed to help students learn collaboratively by asking, answering, and managing academic doubts in one centralized platform. Inspired by community-driven learning, the platform combines peer-to-peer knowledge sharing with AI assistance, enabling faster doubt resolution, organized discussions, and an engaging learning experience for students across different subjects.',
+
+        problem: 'Students often struggle to get immediate answers to academic doubts outside the classroom. Existing communication platforms lack proper categorization, searchability, and structured discussions, making knowledge difficult to reuse. Smart Doubt Exchange Platform addresses this by providing a centralized space where students can post questions, receive peer or AI-assisted answers, vote on helpful responses, and build a searchable knowledge base for future learners.',
+
+        highlights: [
+          'Implemented secure JWT-based authentication for student registration and login',
+          'Developed full CRUD functionality for posting, editing, deleting, and managing doubts',
+          'Built an interactive question and answer system with threaded discussions',
+          'Integrated AI-powered doubt assistance to provide instant guidance for unanswered questions',
+          'Implemented upvote and downvote functionality to highlight the most helpful answers',
+          'Added subject-wise categorization and tag-based organization for efficient navigation',
+          'Developed real-time search and filtering by subject, tags, and keywords',
+          'Created student profiles displaying contributions, answered questions, and reputation points',
+          'Designed a fully responsive interface with modern UI and dark/light mode support',
+          'Deployed the application with a scalable cloud-based architecture for seamless accessibility'
+        ],
+
+        architecture: 'The frontend is developed using React.js with Tailwind CSS to provide a clean, responsive, and interactive learning experience. The backend is powered by Node.js and Express.js, exposing secure REST APIs for authentication, doubt management, answers, and user interactions. MongoDB Atlas stores user profiles, questions, answers, categories, and reputation data with optimized schemas. JWT authentication secures protected routes, while the application follows a modular component-based architecture that separates UI components, business logic, and database operations for maintainability and scalability.',
+
+        steps: [
+          {
+            title: 'Open the Platform',
+            desc: 'Visit the Smart Doubt Exchange Platform and access the landing page with options to Sign Up or Log In.'
+          },
+          {
+            title: 'Create an Account',
+            desc: 'Register using your name, email, and password. Your account is securely created using JWT authentication.'
+          },
+          {
+            title: 'Log In',
+            desc: 'Authenticate with your credentials to access your personalized student dashboard.'
+          },
+          {
+            title: 'Post a New Doubt',
+            desc: 'Click "Ask Doubt", enter the question title, detailed description, subject, and relevant tags before publishing.'
+          },
+          {
+            title: 'Browse Existing Questions',
+            desc: 'Explore previously posted doubts organized by subjects, categories, and popularity.'
+          },
+          {
+            title: 'Answer Questions',
+            desc: 'Open any question and contribute your solution through the discussion section to help fellow students.'
+          },
+          {
+            title: 'Use AI Assistance',
+            desc: 'Receive AI-generated guidance for unanswered or complex questions to support learning and understanding.'
+          },
+          {
+            title: 'Vote on Helpful Answers',
+            desc: 'Upvote useful answers and downvote irrelevant responses to improve answer quality.'
+          },
+          {
+            title: 'Search and Filter',
+            desc: 'Use powerful search and filtering options to quickly locate questions by subject, keywords, or tags.'
+          },
+          {
+            title: 'Manage Your Profile',
+            desc: 'View your posted doubts, answered questions, contribution statistics, and earned reputation points from your profile dashboard.'
+          }
+        ],
+
+        techStack: {
+          Frontend: ['React.js', 'Tailwind CSS', 'JavaScript'],
+          Backend: ['Node.js', 'Express.js'],
+          Database: ['Supabase (PostgreSQL)'],
+          Auth: ['JWT Authentication'],
+          Tools: ['Git', 'GitHub', 'Vercel']
+        },
+
+        github: 'https://github.com/saikiran-221/CSP',
+        demo: 'https://csp-main-zeta.vercel.app/'
+      }
   };
 
   const project = projectsContent[projectId];

@@ -21,26 +21,31 @@ const About = () => {
             <ul>
               <li>Java</li>
               <li>JavaScript</li>
+              <li>Python</li>
             </ul>
           </div>
           <div className="skill-category">
             <h3>Frontend</h3>
             <ul>
               <li>React.js</li>
-              <li>HTML</li>
-              <li>CSS</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Tailwind CSS</li>
             </ul>
           </div>
           <div className="skill-category">
             <h3>Backend</h3>
             <ul>
               <li>Node.js</li>
+              <li>Express JS</li>
             </ul>
           </div>
           <div className="skill-category">
             <h3>Database</h3>
             <ul>
               <li>MySQL</li>
+              <li>MongoDB Atlas</li>
+              <li>Supabase</li>
             </ul>
           </div>
           <div className="skill-category">
@@ -48,8 +53,10 @@ const About = () => {
             <ul>
               <li>Git</li>
               <li>GitHub</li>
-              <li>VS code</li>
+              <li>VS Code</li>
               <li>Cursor</li>
+              <li>ImageKit</li>
+              <li>Cloudinary</li>
             </ul>
           </div>
         </div>

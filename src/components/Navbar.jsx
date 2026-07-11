@@ -50,7 +50,7 @@ export function Navbar() {
             ))}
           </ul>
           <a
-            href="/SaiKiranResume.pdf"
+            href="/Miriyala_SaiKiran_ATS_Resume.pdf"
             className="btn-resume"
             target="_blank"
             rel="noopener noreferrer"
@@ -85,7 +85,7 @@ export function Navbar() {
           ))}
         </ul>
         <a
-          href="/SaiKiranResume.pdf"
+          href="/Miriyala_SaiKiran_ATS_Resume.pdf"
           className="btn-resume mobile-resume"
           target="_blank"
           rel="noopener noreferrer"

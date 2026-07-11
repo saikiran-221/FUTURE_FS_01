@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ProjectCard from '../components/ProjectCard';
 import profileImg from '../assets/IMG.jpg';
 import './Home.css';
@@ -15,7 +16,7 @@ const Home = () => {
               Building responsive and interactive web applications with a focus on seamless user experience.
             </p>
             <div className="hero-btns">
-              <a href="/SaiKiranResume.pdf" className="btn-primary" target="_blank" rel="noopener noreferrer">Resume</a>
+              <a href="/Miriyala_SaiKiran_ATS_Resume.pdf" className="btn-primary" target="_blank" rel="noopener noreferrer">Resume</a>
               <a href="https://github.com/saikiran-221" className="btn-secondary" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
           </div>
@@ -38,7 +39,7 @@ const Home = () => {
           management to agricultural advisory tools. Currently seeking
           internship opportunities.
         </p>
-        <a href="/about" className="read-more">Read More →</a>
+        <Link to="/about" className="read-more">Read More →</Link>
       </section>
 
       <section className="skills-highlight">
@@ -53,6 +54,7 @@ const Home = () => {
             <div className="skill-pills">
               <span>Java</span>
               <span>JavaScript (ES6+)</span>
+              <span>Python</span>
             </div>
           </div>
           <div className="skill-card-home">
@@ -62,14 +64,23 @@ const Home = () => {
               <span>React.js</span>
               <span>HTML5</span>
               <span>CSS3</span>
+              <span>Tailwind CSS</span>
             </div>
           </div>
           <div className="skill-card-home">
             <div className="skill-card-icon">⚙️</div>
-            <h4>Backend & DB</h4>
+            <h4>Backend</h4>
             <div className="skill-pills">
               <span>Node.js</span>
+              <span>Express.js</span>
+            </div>
+          </div>
+          <div className="skill-card-home">
+            <div className="skill-card-icon">🗄️</div>
+            <h4>Database</h4>
+            <div className="skill-pills">
               <span>MySQL</span>
+              <span>MongoDB Atlas</span>
               <span>Supabase</span>
             </div>
           </div>
@@ -80,6 +91,8 @@ const Home = () => {
               <span>Cursor</span>
               <span>VS Code</span>
               <span>Git & GitHub</span>
+              <span>ImageKit</span>
+              <span>Cloudinary</span>
             </div>
           </div>
         </div>
@@ -92,32 +105,32 @@ const Home = () => {
         </div>
         <div className="project-grid">
           <ProjectCard
-            id="bloodconnect"
-            title="BloodConnect"
-            subtitle="Centralized Blood Bank Platform"
-            summary="A role-based management system with JWT auth and MySQL integration."
-            techStack={['React', 'MySQL', 'JWT']}
-            github="https://github.com/saikiran-221"
-            demo="https://blood-bank1-sandy.vercel.app/"
+            id="smart-doubt-exchange"
+            title="Smart Doubt Exchange Platform"
+            subtitle="AI-Powered Collaborative Learning Platform"
+            summary="A full-stack collaborative learning platform that enables students to ask, answer, and organize academic doubts efficiently. Features secure authentication, AI-assisted responses, subject-wise categorization, real-time search, voting system, and a modern responsive dashboard for interactive learning."
+            techStack={['React', 'Node.js', 'Express', 'Supabase', 'JWT', 'Tailwind CSS']}
+            github="https://github.com/saikiran-221/csp"
+            demo="https://csp-main-zeta.vercel.app/"
           />
           <ProjectCard
             id="smart-crop"
             title="Smart Crop Advisory"
             subtitle="Agricultural Recommendation System"
             summary="Data-driven agricultural advisor using conditional filtering algorithms."
-            techStack={['React', 'Algorithms', 'Supabase']}
+            techStack={['React', 'Algorithms', 'Supabase', 'TypeScript', 'Node.js', 'REST API']}
             github="https://github.com/saikiran-221"
             demo="https://team-explorers-upd.vercel.app/"
           />
         </div>
         <div className="projects-cta">
-          <a href="/projects" className="btn-secondary">View All Projects →</a>
+          <Link to="/projects" className="btn-secondary">View All Projects →</Link>
         </div>
       </section>
 
       <section className="cta">
         <h3>Open to Internship Opportunities</h3>
-        <a href="/contact" className="btn-primary">Contact Me</a>
+        <Link to="/contact" className="btn-primary">Contact Me</Link>
       </section>
     </div>
   );

@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import './Footer.css';
 
 export function Footer() {
@@ -13,7 +12,7 @@ export function Footer() {
         <div className="footer-middle">
           <h4>Resume</h4>
           <div className="footer-socials">
-            <a href="/SaiKiranResume.pdf" className="btn-primary-footer" target="_blank" rel="noopener noreferrer">
+            <a href="/Miriyala_SaiKiran_ATS_Resume.pdf" className="btn-primary-footer" target="_blank" rel="noopener noreferrer">
               Download Resume 📄
             </a>
           </div>
